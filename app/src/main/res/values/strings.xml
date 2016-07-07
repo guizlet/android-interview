@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android Interview</string>
+    <string name="congrats_you_are_ready">Congrats, you are ready!</string>
 </resources>
