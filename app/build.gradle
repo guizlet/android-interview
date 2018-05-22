@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 27
     buildToolsVersion "$project.ext.buildToolsVersion"
     defaultConfig {
         applicationId "com.guizlet.androidinterview"
-        minSdkVersion 16
-        targetSdkVersion 25
+        minSdkVersion 21
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -23,12 +23,12 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:appcompat-v7:$project.ext.supportLibraryVersion"
-    compile "com.android.support:design:$project.ext.supportLibraryVersion"
-    compile "com.android.support:recyclerview-v7:$project.ext.supportLibraryVersion"
-    testCompile "junit:junit:4.12"
-    androidTestCompile "com.android.support.test.espresso:espresso-core:2.2.2"
-    androidTestCompile "com.android.support.test:runner:0.5"
-    androidTestCompile "com.android.support:support-annotations:$project.ext.supportLibraryVersion"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:$project.ext.supportLibraryVersion"
+    implementation "com.android.support:design:$project.ext.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$project.ext.supportLibraryVersion"
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:3.0.2"
+    androidTestImplementation "com.android.support.test:runner:1.0.2"
+    androidTestImplementation "com.android.support:support-annotations:$project.ext.supportLibraryVersion"
 }
