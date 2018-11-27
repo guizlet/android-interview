@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-    buildToolsVersion "$project.ext.buildToolsVersion"
     defaultConfig {
         applicationId "com.guizlet.androidinterview"
         minSdkVersion 21
